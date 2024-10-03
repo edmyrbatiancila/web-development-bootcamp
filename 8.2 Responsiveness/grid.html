@@ -5,34 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Grid</title>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 200px 200px;
-      gap: 30px;
-    }
-
-    .first {
-      grid-column: span 2;
-    }
-
-    .card {
-      background-color: blue;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>CSS Grid</h1>
   <div class="grid-container">
-    <div class="first card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <div class="first_grid card_grid"></div>
+    <div class="card_grid"></div>
+    <div class="card_grid"></div>
+    <div class="card_grid"></div>
+    <div class="card_grid"></div>
   </div>
 
+  <div class="menu">
+    <a href="flexbox.html">Example of Flexbox</a>
+    <a href="media-query.html">Example Media Queries</a>
+    <a href="bootstrap.html">Example of Bootstrap</a>
+    <a href="index.html">Back to Main Menu</a>
+  </div>
+  
 </body>
 
 </html>

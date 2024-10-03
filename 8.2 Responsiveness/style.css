@@ -1,0 +1,69 @@
+.flex-container {
+    display: flex;
+}
+
+.card_flex {
+    background: blue;
+    border: 30px solid white;
+    height: 100px;
+    flex: 1;
+}
+
+.first_flex {
+    flex: 2;
+}
+
+.second_flex {
+    flex: 0.5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+}
+
+.first_grid {
+    grid-column: span 2;
+}
+
+.card_grid {
+    background-color: blue;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.menu a{
+    padding-bottom: 10px;
+}
+
+.media_query {
+    background-color: rebeccapurple;
+    height: 500px;
+    width: 500px;
+}
+
+/* Media Query Examples below: */
+
+@media (max-width: 600px) {
+
+      /* CSS for screens below or equal to 600px wide */
+    .media_query {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(any-hover: hover) {
+    .anyhover:hover {
+        background-color: blue;
+        display: block;
+        padding: 50px;
+    }
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: aquamarine;
+}
+
+.mobile-size, .ipads-size, .laptops, .desktops {
+    display: none;
+}
+
+
+/* Mobile Devices screen size */
+@media (min-width: 319px) and (max-width: 480px) {
+    body {
+        background-color: lightsalmon;
+    }
+
+    .mobile-size {
+        display: flex;
+    }
+}
+
+/* iPads and Tablets screen size */
+@media (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: powderblue;
+    }
+
+    .ipads-size {
+        display: block;
+        color: brown;
+    }
+}
+
+/* Laptops screensize */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+        background-color: limegreen;
+    }
+
+    .laptops {
+        display: inline-block;
+        color: white;
+    }
+}
+
+/* Desktops screensize */
+@media (min-width: 1601px) {
+    body {
+        background-color: seagreen;
+    }
+
+    .desktops {
+        display: grid;
+        text-align: center;
+        color: rgb(180, 148, 209);
+        font-size: 5em;
+        font-weight: bold;
+    }
+}
