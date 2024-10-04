@@ -1,0 +1,18 @@
+* {
+    outline: 1px dotted red;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+.container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
