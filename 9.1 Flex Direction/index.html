@@ -13,9 +13,8 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: inline-flex;
-      flex-direction: column;
-      
+      display: flex;
+      flex-direction: rows;
     }
 
     /*
@@ -24,8 +23,8 @@ children of the .container class.
     */
     
 
-    .red, .orange, .yellow, .green, .blue, .indigo, .purple {
-      flex-basis: 200px;
+    .container > * {
+      flex-basis: 300px;
     }
 
     .red {
