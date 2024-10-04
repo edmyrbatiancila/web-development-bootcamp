@@ -10,9 +10,14 @@
     grid-template-columns: 1fr 1fr 1.5fr;
 }
 
-.container > * {
+.container > .item {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+}
+
+.cowboy {
+    background-color: #00B9FF;
+    grid-column: span 2;
 }
