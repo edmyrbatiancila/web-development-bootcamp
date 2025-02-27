@@ -4,5 +4,5 @@ const bmiCalculator = (weight, height) => {
     return bmi;
 }
 
-const bmi = bmiCalculator(65, 1.8);
+const bmi = bmiCalculator(87, 1.77);
 console.log(bmi);
