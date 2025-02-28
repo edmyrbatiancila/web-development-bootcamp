@@ -1,7 +1,44 @@
 h1 {
-  color: red;
+    color: red;
 }
 
-.click-me {
-  color:red;
+.modes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: blue;
+    color: white;
+}
+
+.dark-mode:hover {
+    background-color: rgb(35, 35, 187);
+}
+
+
+.testing {
+    background-color: rgb(30, 3, 54);
+}
+
+.invisible {
+    display: none;
+}
+
+.huge {
+    font-size: 10rem;
 }
