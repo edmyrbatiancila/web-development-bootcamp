@@ -2,6 +2,13 @@ h1 {
     color: red;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .modes {
     display: flex;
     justify-content: center;
@@ -41,4 +48,56 @@ button {
 
 .huge {
     font-size: 10rem;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 270px;
+    padding: 5px;
+    border: 2px dotted blue;
+    background-color: yellow;
+    object-fit: cover;
+}
+
+.pictures {
+    display: flex;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(50, 6, 92, 0.699);
+}
+
+.side-menu button{
+    width: 100%;
+}
+
+.character-name {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.transform {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+}
+
+.transform:hover {
+    background-color: rgb(146, 18, 18);
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.character-selected {
+    background-color: blue;
+    color: white;
 }
