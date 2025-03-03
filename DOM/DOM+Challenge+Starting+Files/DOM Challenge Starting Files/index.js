@@ -1,4 +1,6 @@
-import characters from "./characters.js";
+import characters from "./js/characters.js";
+
+let currentAudio = null;
 
 document.querySelector(".dark-mode").addEventListener("click", function() {
     document.querySelector("body").classList.add("testing");
@@ -23,6 +25,12 @@ Object.keys(characters).forEach(buttonClass => {
         const nameElement = document.querySelector(".character-name");
         const buttonElement = document.querySelector(".transform");
         const character = characters[buttonClass].human;
+        const characterAudio = new Audio(character.audio);
+
+        if(currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
 
         document.querySelectorAll(".menu-button button").forEach(btn => {
             btn.classList.remove("character-selected");
@@ -33,6 +41,8 @@ Object.keys(characters).forEach(buttonClass => {
         imgElement.setAttribute("src", character.src);
         nameElement.textContent = character.name;
         nameElement.style.color = character.color;
+        characterAudio.play();
+        currentAudio = characterAudio;
         buttonElement.textContent = "Transform";
     });
 });

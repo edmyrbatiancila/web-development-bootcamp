@@ -4,7 +4,8 @@ const characters = {
         human: {
             src: "images/naruto_human.gif",
             name: "Human Naruto Uzumaki",
-            color: "white"
+            color: "white",
+            audio: "audio/naruto_audio.mp3"
         },
         transformed: {
             src: "images/naruto_kyuubi.gif",
@@ -17,7 +18,8 @@ const characters = {
         human: {
             src: "images/kaneki_human.gif",
             name: "Human Kaneki Ken",
-            color: "white"
+            color: "white",
+            audio: "audio/kaneki_audio.mp3"
         },
         transformed: {
             src: "images/kaneki_ghoul.gif",
@@ -30,7 +32,8 @@ const characters = {
         human: {
             src: "images/ichigo_human.gif",
             name: "Human Ichigo Kurosaki",
-            color: "white"
+            color: "white",
+            audio: "audio/ichigo_audio.mp3"
         },
         transformed: {
             src: "images/ichigo_hollow.gif",
@@ -43,7 +46,8 @@ const characters = {
         human: {
             src: "images/okarun_human.gif",
             name: "Human Ken Takakura",
-            color: "white"
+            color: "white",
+            audio: "audio/okarun_sound.mp3"
         },
         transformed: {
             src: "images/okarun_yokai.gif",
@@ -56,7 +60,8 @@ const characters = {
         human: {
             src: "images/eren_human.gif",
             name: "Human Eren Yeager",
-            color: "white"
+            color: "white",
+            audio: "audio/eren_audio.mp3"
         },
         transformed: {
             src: "images/eren_titan.gif",
@@ -69,7 +74,8 @@ const characters = {
         human: {
             src: "images/kafka_human.gif",
             name: "Human Kafka Hibino",
-            color: "white"
+            color: "white",
+            audio: "audio/kafka_audio.mp3"
         },
         transformed: {
             src: "images/kafka_kaiju.gif",
