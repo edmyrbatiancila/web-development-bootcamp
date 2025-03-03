@@ -16,32 +16,40 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
+.r {
   background-image: url("images/tom1.png");
 }
 
-.a {
+.u {
   background-image: url("images//tom2.png");
 }
 
-.s {
+.i {
   background-image: url("images/tom3.png");
 }
 
-.d {
+.t {
   background-image: url("images/tom4.png");
 }
 
-.j {
+.f {
   background-image: url("images/snare.png");
 }
 
-.k {
+.y {
   background-image: url("images/crash.png");
 }
 
-.l {
+.v {
   background-image: url("images/kick.png");
+}
+
+.h {
+  background-image: url("images/open_hihat.png");
+}
+
+.j {
+  background-image: url("images/close_hihat.PNG");
 }
 
 .set {
