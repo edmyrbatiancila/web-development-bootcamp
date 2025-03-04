@@ -7,6 +7,7 @@ for(let i = 0; i < numberOfdrums; i++) {
         const buttonTextContent = this.textContent;
         
         makeSound(buttonTextContent);
+        butttonAnimation(buttonTextContent);
     });
 }
 
@@ -14,6 +15,7 @@ document.addEventListener("keypress", function(event) {
     const keyboard = event.key;
 
     makeSound(keyboard);
+    butttonAnimation(keyboard);
 });
 
 function makeSound(key) {
@@ -74,4 +76,13 @@ function makeSound(key) {
     }
 }
 
+function butttonAnimation(currentKey) {
+    const activeButton = document.querySelector(`.${currentKey}`);
 
+    activeButton.classList.add("pressed");
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 150);
+
+}

@@ -32,3 +32,4 @@ function HouseKeeper(yearsOfExperience, name, cleaningRepertoire, skills) {
 const houseKeeper2 = new HouseKeeper(10, "Bob", ["lobby", "kitchen", "chair"]);
 
 houseKeeper2.clean();
+

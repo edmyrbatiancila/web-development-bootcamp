@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid yellow;
+}
+
+.container-remove {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    color: yellow;
+    padding: 10px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(243, 141, 7);
+    color: white;
+    border-radius: 0px;
+    border: 1px solid yellow;
+}
+
+.bigText {
+    font-size: 2rem;
+}
+
+.background-btn1 {
+    background-image: url("images/dandadan_wallpaper.jpeg");
+    object-fit: cover;
+}
+
+.background-btn2 {
+    background-image: url("images/sakamoto_wallpaper.jpg");
+    object-fit: cover;
+}
+
+.background-btn3 {
+    background-image: url("images/freiren_wallpaper.jpg");
+    object-fit: cover;
+}
+
+.background-btn4 {
+    background-image: url("images/jujutsu_wallpaper.jpg");
+    object-fit: cover;
+}
