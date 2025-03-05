@@ -1,39 +1,16 @@
-$(".btn1").on("click", function() {
-    $("body").addClass("background-btn1");
-    $(".container").addClass("container-remove");
+const numberOfImages = document.querySelectorAll(".pictures").length;
 
-    setTimeout(function() {
-        $("body").removeClass("background-btn1");
-        $(".container").removeClass("container-remove");
-    }, 1000);
+for(let i = 1; i < numberOfImages; i++) {
+    $(`.image${i}`).on("click", function() {
+        $(".content").addClass(`background-btn${i}`);
+    });
+}
+
+$(".pictures").on("click", function() {
+
 });
 
-$(".btn2").on("click", function() {
-    $("body").addClass("background-btn2");
-    $(".container").addClass("container-remove");
 
-    setTimeout(function() {
-        $("body").removeClass("background-btn2");
-        $(".container").removeClass("container-remove");
-    }, 1000);
-});
-
-$(".btn3").on("click", function() {
-    $("body").addClass("background-btn3");
-    $(".container").addClass("container-remove");
-
-    setTimeout(function() {
-        $("body").removeClass("background-btn3");
-        $(".container").removeClass("container-remove");
-    }, 1000);
-});
-
-$(".btn4").on("click", function() {
-    $("body").addClass("background-btn4");
-    $(".container").addClass("container-remove");
-
-    setTimeout(function() {
-        $("body").removeClass("background-btn4");
-        $(".container").removeClass("container-remove");
-    }, 1000);
-});
+$("input").keypress(function(event) {
+    $(".text-input").text(event.key);
+})

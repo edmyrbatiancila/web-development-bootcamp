@@ -3,46 +3,30 @@
     padding: 0;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: auto;
-}
-
 h1 {
     text-align: center;
+    font-size: 10rem;
 }
 
-.container {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 10px;
     border: 2px solid yellow;
 }
 
-.container-remove {
-    display: none;
-}
-
-button {
+img {
+    width: 500px;
+    height: 200px;
     cursor: pointer;
-    color: yellow;
-    padding: 10px;
-    background-color: red;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
 }
 
-button:hover {
-    background-color: rgb(243, 141, 7);
-    color: white;
-    border-radius: 0px;
-    border: 1px solid yellow;
+.content {
+    border: 1px dotted yellow;
+    height: 700px;
+    object-fit: contain;
+    padding: 10px;
 }
 
 .bigText {
@@ -68,3 +52,42 @@ button:hover {
     background-image: url("images/jujutsu_wallpaper.jpg");
     object-fit: cover;
 }
+
+/* example grid: */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+        
