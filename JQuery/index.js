@@ -1,14 +1,24 @@
-const numberOfImages = document.querySelectorAll(".pictures").length;
+const numberOfImages = $(".pictures").length;
 
-for(let i = 1; i < numberOfImages; i++) {
+// $('.images')
+
+for(let i = 1; i <= numberOfImages; i++) {
     $(`.image${i}`).on("click", function() {
-        $(".content").addClass(`background-btn${i}`);
+        const imgSrc = $(this).attr("src");
+
+        console.log("clicked image: ", imgSrc);
+        $("body").removeClass(function (index, className) {
+            return (className.match(/(^|\s)background-btn\d+/g) || []).join(" ");
+        });
+
+        $(".pictures").removeClass("picture-selected");
+        
+        $(this).addClass("picture-selected");
+
+        $("body").addClass(`background-btn${i}`);
+        $("header h1").text("Example");
     });
 }
-
-$(".pictures").on("click", function() {
-
-});
 
 
 $("input").keypress(function(event) {
