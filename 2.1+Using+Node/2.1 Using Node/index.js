@@ -1,1 +1,5 @@
-console.log("Hi Testing, from me!");
+const addition = (a, b) => {
+    return a + b;
+}
+
+console.log(addition(5, 2));
